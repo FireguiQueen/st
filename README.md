@@ -13,7 +13,5 @@ git clone git clone https://git.suckless.org/st
 ``` 
 
 ```
-cd ~/st
 make clean install
-./st
 ``` 
