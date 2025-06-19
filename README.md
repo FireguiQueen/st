@@ -7,10 +7,10 @@ This is a fork of st. The original repository isn’t available on GitHub. For t
 ## Installation
 - From my fork  
 ``` 
-	git clone https://github.com/FireguiQueen/st.git
+git clone https://github.com/FireguiQueen/st.git
 ``` 
 
 - From original source 
 ``` 
-	git clone git clone https://git.suckless.org/st 
+git clone git clone https://git.suckless.org/st 
 ```
