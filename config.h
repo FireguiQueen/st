@@ -103,16 +103,10 @@ int allowwindowops = 0;
 static double minlatency = 2;
 static double maxlatency = 33;
 
-/*
- * blinking timeout (set to 0 to disable blinking) for the terminal blinking
- * attribute.
- */
+// blinking timeout (set to 0 to disable blinking) for the terminal blinking attribute.
 static unsigned int blinktimeout = 800;
 
-/*
- * bell volume. It must be a value between -100 and 100. Use 0 for disabling
- * it
- */
+// bell volume. It must be a value between -100 and 100. Use 0 for disabling
 static int bellvolume = 0;
 
 /* default TERM value */
@@ -135,9 +129,7 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/*
- * Default columns and rows numbers
- */
+// Default columns and rows numbers
 static unsigned int cols = 80;
 static unsigned int rows = 24;
 
