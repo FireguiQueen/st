@@ -1,12 +1,65 @@
-/* See LICENSE file for copyright and license details. */
+/* appearance */
+
+// font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+static char *font = "HackNerdFont-Regular:pixelsize=16:antialias=true:autohint=true";
+static int borderpx = 2;
+
+// Kerning / character bounding-box multipliers 
+static float cwscale = 1.03;
+static float chscale = 1.1;
 
 /*
- * appearance
- *
- * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+ * Default shape of cursor
+ * 2: Block ("█")
+ * 4: Underline ("_")
+ * 6: Bar ("|")
+ * 7: Snowman ("☃")
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static unsigned int cursorshape = 4;
+
+// thickness of underline and bar cursors
+static unsigned int cursorthickness = 4;
+
+
+/* Terminal colors (16 first used in escape sequence) */
+static const char *colorname[] = {
+	/* 8 normal colors */
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
+
+	/* 8 bright colors */
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
+
+	// more colors can be added after 255 to use with DefaultXX.
+	[255] = 0,
+	"#d0e5f8",    /* default cursor colour     */ 
+	"#555555",
+	"#f6f6f3",    /* default foreground colour */
+	"black",      /* default background colour */
+        "cyan",
+};
+
+
+// Default colors (colorname index). foreground, background, cursor, reverse cursor
+unsigned int defaultfg = 258;
+unsigned int defaultbg = 259;
+unsigned int defaultcs = 256;
+static unsigned int defaultrcs = 257;
+
+
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,6 +69,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
+
 static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
@@ -24,10 +78,6 @@ char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
 char *vtiden = "\033[?6c";
-
-/* Kerning / character bounding-box multipliers */
-static float cwscale = 1.0;
-static float chscale = 1.0;
 
 /*
  * word delimiter string
@@ -63,11 +113,6 @@ static double maxlatency = 33;
 static unsigned int blinktimeout = 800;
 
 /*
- * thickness of underline and bar cursors
- */
-static unsigned int cursorthickness = 2;
-
-/*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
  * it
  */
@@ -93,66 +138,13 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
-};
-
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
-
-/*
- * Default shape of cursor
- * 2: Block ("█")
- * 4: Underline ("_")
- * 6: Bar ("|")
- * 7: Snowman ("☃")
- */
-static unsigned int cursorshape = 2;
-
 /*
  * Default columns and rows numbers
  */
-
 static unsigned int cols = 80;
 static unsigned int rows = 24;
 
-/*
- * Default colour and shape of the mouse cursor
- */
+//  Default colour and shape of the mouse cursor
 static unsigned int mouseshape = XC_xterm;
 static unsigned int mousefg = 7;
 static unsigned int mousebg = 0;
