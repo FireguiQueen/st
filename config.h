@@ -5,7 +5,7 @@ static char *font = "HackNerdFont-Regular:pixelsize=16:antialias=true:autohint=t
 static int borderpx = 2;
 
 // Kerning / character bounding-box multipliers 
-static float cwscale = 1.03;
+static float cwscale = 1;
 static float chscale = 1.1;
 
 /*
@@ -35,30 +35,28 @@ static const char *colorname[] = {
 
 	/* 8 bright colors */
 	"gray50",
-	"red",
+	"#ff5c57", // red
 	"green",
-	"yellow",
-	"#5c5cff",
+	"#f3f99d", // yellow
+	"#57c7ff", // blue
 	"magenta",
 	"cyan",
 	"white",
 
 	// more colors can be added after 255 to use with DefaultXX.
 	[255] = 0,
-	"#d0e5f8",    /* default cursor colour     */ 
-	"#555555",
+        "#021220",    /* default background colour */
 	"#f6f6f3",    /* default foreground colour */
-	"black",      /* default background colour */
+	"#d0e5f8",    /* default cursor colour */ 
+	"#555555",
         "cyan",
 };
 
-
-// Default colors (colorname index). foreground, background, cursor, reverse cursor
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
+// Default colors (colorname index). 
+unsigned int defaultbg = 256; // background
+unsigned int defaultfg = 257; // foreground (char color)
+unsigned int defaultcs = 258; // cursor 
 static unsigned int defaultrcs = 257;
-
 
 
 /*
@@ -69,7 +67,6 @@ static unsigned int defaultrcs = 257;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-
 static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
