@@ -9,12 +9,12 @@ Clean. Lightweight. Not bloated. Low RAM usage (3-5MB). And fully customizable t
 
 ## Key binds
 This build uses Vim-style key binds. If you're not familiar yet, you can get used to them by playing [Vim Adventures](https://vim-adventures.com/) in your browser.
-| Action                | Default Keybind |
-| --------------------- | :--------------- |
-| Scroll one line up    | `Ctrl + y`      |
-| Scroll one line down  | `Ctrl + e`      |
-| Scroll half page up   | `Ctrl + u`      |
-| Scroll half page down | `Ctrl + d`      |
+| Action                  | Default Keybind  |
+| :---------------------  | :--------------- |
+| Scroll one line up      | `Ctrl + k`       |
+| Scroll one line down    | `Ctrl + j`       |
+| Scroll half page up     | `Ctrl + u`       |
+| Scroll half page down   | `Ctrl + d`       |
 
 
 ## Installation
