@@ -170,6 +170,13 @@ static MouseShortcut mshortcuts[] = {
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
+
+	// scroll
+        { ControlMask,          XK_k,           kscrollup,      {.i =   1} },  // one-line up
+        { ControlMask,          XK_j,           kscrolldown,    {.i =   1} },  // one-line down
+	{ ControlMask,		XK_u, 		kscrollup,    	{.i =  10} },  // half-page up
+	{ ControlMask,		XK_d,		kscrolldown, 	{.i =  10} },  // half-page down
+
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
