@@ -20,8 +20,6 @@ This build uses Vim-style key binds. If you're not familiar yet, you can get use
 ## Installation
 ``` 
 git clone https://github.com/FireguiQueen/st.git
-``` 
-
-```
-make clean install
+cd st
+sudo make clean install
 ``` 
