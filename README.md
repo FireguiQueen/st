@@ -11,6 +11,11 @@ Clean. Lightweight. Not bloated. Low RAM usage (3-5MB). And fully customizable t
 
 ---
 
+## Patches
+- [Scrollback](https://st.suckless.org/patches/scrollback/) 
+
+---
+
 ## Key binds
 This build uses Vim-style key binds. If you're not familiar yet, you can get used to them by playing [Vim Adventures](https://vim-adventures.com/) in your browser.
 | Action                  | Default Keybind  |
