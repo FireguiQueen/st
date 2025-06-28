@@ -23,29 +23,29 @@ static unsigned int cursorthickness = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	/* 8 normal colors. Default: black, red3, green3, yellow3, blue2, magnenta3, cyan3, gray90 */
+	"#191D27",
+	"#FF5C5F",
+	"#80b285",
+	"#FDF3A0",
+	"#5BADC5",
+	"#4E2A5B",
+	"#D2FFFE",
+	"#D0E0E3",
 
-	/* 8 bright colors */
-	"gray50",
+	/* 8 bright colors.  Default: gray50, red2, green, yellow, blue, magenta, cyan, white */
+	"#F2E3EA", // gray
 	"#ff5c57", // red
-	"green",
+	"#B7E461", // green
 	"#f3f99d", // yellow
 	"#57c7ff", // blue
-	"magenta",
-	"cyan",
+	"#7732BE", // purple
+	"#9CDBD9", // cyan
 	"white",
 
 	// more colors can be added after 255 to use with DefaultXX.
 	[255] = 0,
-        "#021220",    /* default background colour */
+        "#0E1111",    /* default background colour */
 	"#f6f6f3",    /* default foreground colour */
 	"#d0e5f8",    /* default cursor colour */ 
 	"#555555",
