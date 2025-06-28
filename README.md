@@ -1,11 +1,15 @@
 # ST: Simple Terminal
 ST is a simple terminal emulator for X11 which sucks less. 
 
-## Note
+### Note
 This is a fork of st. The original repository isn’t available on GitHub. For the official source, please visit: https://st.suckless.org/
+
+---
 
 ## Why ST
 Clean. Lightweight. Not bloated. Low RAM usage (3-5MB). And fully customizable to look just as good as any other terminal emulator.
+
+---
 
 ## Key binds
 This build uses Vim-style key binds. If you're not familiar yet, you can get used to them by playing [Vim Adventures](https://vim-adventures.com/) in your browser.
