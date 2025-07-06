@@ -21,9 +21,15 @@ static unsigned int cursorshape = 4;
 static unsigned int cursorthickness = 4;
 
 
+
+// COLORS
+
+// background opacity (1.0 = fully transparent, 1.0 = fully opaque)
+float alpha = 0.5;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors. Default: black, red3, green3, yellow3, blue2, magnenta3, cyan3, gray90 */
+	// 8 normal colors. Default: black, red3, green3, yellow3, blue2, magnenta3, cyan3, gray90 
 	"#191D27",
 	"#FF5C5F",
 	"#80b285",
@@ -33,7 +39,7 @@ static const char *colorname[] = {
 	"#D2FFFE",
 	"#D0E0E3",
 
-	/* 8 bright colors.  Default: gray50, red2, green, yellow, blue, magenta, cyan, white */
+	// 8 bright colors. Default: gray50, red2, green, yellow, blue, magenta, cyan, white 
 	"#F2E3EA", // gray
 	"#ff5c57", // red
 	"#B7E461", // green
