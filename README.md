@@ -17,8 +17,8 @@ Clean. Lightweight. Not bloated. Low RAM usage (3-5MB). And fully customizable t
 
 ---
 ## Dependencies
-- Font: hack nerd font. [download here](https://www.nerdfonts.com/font-downloads)
-- Window compositor: [Picom](https://github.com/yshui/picom) (recommended).
+- **Font:** hack nerd font. [download here](https://www.nerdfonts.com/font-downloads)
+- **Window compositor:** [Picom](https://github.com/yshui/picom) (recommended).
 
 ---
 
