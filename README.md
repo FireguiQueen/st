@@ -11,8 +11,9 @@ Clean. Lightweight. Not bloated. Low RAM usage (3-5MB). And fully customizable t
 
 ---
 
-## Patches
-- [Scrollback](https://st.suckless.org/patches/scrollback/) 
+## Applied patches
+- [Scrollback](https://st.suckless.org/patches/scrollback/)
+- [Alpha](https://st.suckless.org/patches/alpha/) 
 
 ---
 
