@@ -25,7 +25,7 @@ static unsigned int cursorthickness = 4;
 // COLORS
 
 // background opacity (1.0 = fully transparent, 1.0 = fully opaque)
-float alpha = 0.5;
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
