@@ -5,7 +5,7 @@ ST is a simple terminal emulator for X11 which sucks less.
 Clean. Lightweight. Not bloated. Low RAM usage (3-5MB). And fully customizable to look just as good as any other terminal emulator.
 
 ### Note
-This is a fork of st. The original repository isn’t available on GitHub. For the official source, please visit: https://st.suckless.org/
+This is a fork of st. For the official source, please visit: https://st.suckless.org/
 
 ---
 
