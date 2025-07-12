@@ -11,7 +11,9 @@ This is a fork of st. The original repository isn’t available on GitHub. For t
 
 ## Applied patches
 - [Scrollback](https://st.suckless.org/patches/scrollback/)
-- [Alpha](https://st.suckless.org/patches/alpha/) 
+- [Alpha](https://st.suckless.org/patches/alpha/)
+- [Column redraw](https://st.suckless.org/patches/columnredraw/)
+  
 
 ---
 ## Dependencies
